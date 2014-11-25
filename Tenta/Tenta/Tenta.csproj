@@ -93,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\controller\AddGenreController.js" />
+    <Content Include="app\controller\ListGenreController.js" />
+    <Content Include="app\controller\UpdateGenreController.js" />
+    <Content Include="app\partials\AddGenre.html" />
+    <Content Include="app\partials\ListGenre.html" />
+    <Content Include="app\partials\UpdateGenre.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="scripts\angular-mocks.js" />
@@ -157,8 +163,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\controller\" />
-    <Folder Include="app\partials\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>

@@ -1,0 +1,14 @@
+﻿<h1>List</h1>
+
+<table style="border: 1px" class="table">
+    <th>Genre Id</th>
+    <th>Name</th>
+    <tr data-ng-repeat="g in genres">
+        <td data-ng-bind="g.GenreId"></td>
+        <td data-ng-bind="g.Name"></td>
+        <td data-ng-model="g.GenreId">
+            <a href="#/UpdateGenre/{{g.GenreId}}" data-ng-click="updateGenre(g.GenreId)">Update</a>
+        </td>
+        <td data-ng-model="g.GenreId"><button data-ng-click="deleteGenre(g.GenreId)">Delete</button></td>
+    </tr>
+</table>
