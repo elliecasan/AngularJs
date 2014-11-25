@@ -11,9 +11,9 @@ app.config(function ($routeProvider) {
             templateUrl: "/app/partials/ListGenre.html",
             controller: "ListGenreController"
         })
-        .when('/UpdateGenre',
+        .when('/UpdateGenre/:genreId',
         {
-            templateUrl: "/app/partials/UpdateGenre.html",
+            templateUrl: "app/partials/UpdateGenre.html",
             controller: "UpdateGenreController"
         })
         .otherwise({ redirectTo: '/' });
@@ -23,4 +23,4 @@ app.config(function ($routeProvider) {
 
 app.controller('AddGenreController', AddGenreController),
 app.controller('ListGenreController', ListGenreController),
-app.controller('UpdateGenreController', UpdateGenreController)
+app.controller('UpdateGenreController', UpdateGenreController);
